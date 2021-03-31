@@ -19,10 +19,11 @@ public class Runner {
 	//	Hello.helloworld("i am ironman");
 	//	System.out.println(Hello.h4());
 	//	Hello.h2("ironman", "3");
-		Calculator.methodaddition(5, 5);
-		Calculator.methodsubtract(4, 2);
-		Calculator.methodmultiply(2, 6);
-		Calculator.methoddivision(50, 2);
+		
+//		Calculator.methodaddition(5, 5);
+//		Calculator.methodsubtract(4, 2);
+//		Calculator.methodmultiply(2, 6);
+//		Calculator.methoddivision(50, 2);
 		
 		int r = Calculator.add(3, 4);
 		System.out.println(r);
@@ -30,12 +31,31 @@ public class Runner {
 		double g = Calculator.multiply(50,20);
 		System.out.println(g);
 		
-		int f = Calculator.subtraction(15, 12);
-		System.out.println(f);
+		int o = Calculator.subtraction(15, 12);
+		System.out.println(o);
 		
 		int j = Calculator.division(50, 10);
 		System.out.println(j);
 		
+		
+//		Results Class-
+		
+		r *= 3; // 9
+		System.out.println(r);
+		
+		r /= 3; // 3
+		System.out.println(r);
+		
+		boolean b4 = true;
+		
+		System.out.println(false != b4);
+		
+		Results.Biology = 87;
+		Results.Chemistry = 103;
+		Results.Physics = 145;
+		
+		Results.displayResults();
+		Results.displayTotalAsPercentage();
 		
 //		Class names are in PascalCase
 //		variables are named in camelCase
@@ -100,7 +120,74 @@ public class Runner {
 //		f /= 3; // gives 3
 //		System.out.println(f);
 		
+//		boolean bool1 = true;
+//		boolean bool2 = false;
+
+		String st1 = "Hello";
+		String st2 = "Hello";
+		String st3 = "World";
+		
+//		Standard equality check//
+//		checking if two items are equal//
+		boolean didItMatch = (st1 == st2);
+		
+		
+		if (st1 == st2) {
+			System.out.println("hello");
+		} else {
+		System.out.println("st1 and st2 are not equal");
+		}
+		
+		if (didItMatch) {
+			System.out.println("hello");
+		} else {
+			System.out.println("sy1 is not equal to st3, woohoo");
+		}
+		
+		if (st1 != st3) {
+			System.out.println();
+		}
+		
+		
+//		//Logical Operators
+		boolean bool1 = true;
+		boolean bool2 = false;
+		
+		if (bool1 && getBool()) {
+			System.out.println("Both are true 1 (logical AND)");
+		}
+		
+		if (bool2 && getBool()) {
+			System.out.println("Both are true 2");
+		}
+		
+		if (bool2 & getBool()) {
+			System.out.println("Both are true 3(bitwise AND)");}
+		
+//		Logical OR
+		if (bool1 || getBool()) {
+			System.out.println("bool1 or getBool() is true(logical OR)");}
+		}
+		
+		int temp = 3;{
+		
+		if (temp > 25) {
+			System.out.println("temp greater than 25");
+		}else if (temp >= 10) {
+			System.out.println("temp greater than or equal to 10, less than 25");
+		}else {
+			System.out.println("temp is less than 10");}
+			
+		}
+	
+		public static boolean getBool() {
+			System.out.println("in get");
+			return true;
+		}
 		
 	}
-
-}
+		
+		
+		
+		
+		

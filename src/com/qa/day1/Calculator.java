@@ -32,9 +32,15 @@ public class Calculator {
 		int result = num1 - num2;
 		return num1 - num2;
 	}
-	
+//Underneath returns a division
 	public static int division(int num1, int num2) {
 		int result = num1 / num2;
 		return num1 / num2;
+	}{
+	
+//	if (num1 <= || num2) {
+		System.out.println("first num is smaller than second");
+//	} else if {
+		System.out.println("Division cannot be performed");}
 	}
-}
+//}
